@@ -18,6 +18,9 @@
     --text-color-light: hsl(0 0% 98%);
     --body-color: hsl(0 0% 98%);
 
+    --font-primary: 'DM Sans', sans-serif;
+    --font-secondary:'Poppins', sans-serif;
+
     font-size: 62.5%;
   }
   
