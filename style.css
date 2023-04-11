@@ -48,7 +48,7 @@ body {
 }
 
 .title{
-  font-size: 3.1rem;
+  font-size: 3rem;
   font-weight: 700;
   font-family: var(--font-Poppins);
   color: var(--title-color);
@@ -117,7 +117,7 @@ body {
 }
 
 main {
-  margin-top: var(--header-height);
+  margin-top: calc(var(--header-height) + 3.2rem);
 }
 /*===  NAV ============================ */
 nav {
@@ -133,15 +133,36 @@ nav ul li{
   text-align: center;
 }
 
+nav ul li a{
+  transition: color 0.2s;
+  position: relative;
+}
+
+nav ul li a:hover{
+  color:var(--base-color);
+}
+
+nav ul li a::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: var(--base-color);
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+nav ul li a:hover::after{
+  width: 100%;
+  transition: width 0.3s;
+}
+
 nav .menu{
   opacity: 0;
   visibility: hidden;
 }
 
-
-nav .menu ul{
-  display: none;
-}
 
 /*=== Mostrar menu ============================ */
 
@@ -161,12 +182,8 @@ nav.show .menu{
   place-content: center;
 }
 
-nav.show .menu ul{
-  display: grid;
-}
-
 nav.show .menu ul.grid{
-  gap: 6.4rem;
+  gap: 3.4rem;
 }
 
 /*=== TOGGLE ============================ */
@@ -185,7 +202,7 @@ nav .icon-close{
 
 /*===  HOME ============================ */
 #home {
-  overflow: hidden;;
+  overflow: hidden;
 }
 
 
