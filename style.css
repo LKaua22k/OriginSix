@@ -76,8 +76,34 @@ body {
   padding: 8rem 0;
 }
 
+.section header {
+  margin-bottom: 6.4rem;
+}
+
+.section header strong{
+  color: var(--base-color);
+}
+
 .section .title {
   margin-bottom: 1.6rem;
+}
+
+.divider-1{
+  height: 1px;
+  background: linear-gradient(
+    270deg,
+    hsla(var(--hue), 36%, 57%, 1),
+    hsla(var(--hue), 65%, 88%, 0.34)
+  );
+}
+
+.divider-2{
+  height: 1px;
+  background: linear-gradient(
+    270deg,
+    hsla(var(--hue), 65%, 88%, 0.34),
+    hsla(var(--hue), 36%, 57%, 1)
+  );
 }
 
 #header{
@@ -143,7 +169,7 @@ nav ul li a:hover{
 }
 
 nav ul li a::after{
-  content: '';
+  content: "";
   width: 0%;
   height: 2px;
   background: var(--base-color);
@@ -165,6 +191,8 @@ nav .menu ul{
 nav .menu{
   opacity: 0;
   visibility: hidden;
+  top: -32rem;
+  transition: 0.2s;
 }
 
 
@@ -207,21 +235,22 @@ nav .icon-close{
   opacity: 0;
   font-size: 2.4rem;
   position: absolute;
-  top: -101%;
+  top: -2.4rem;
+  right: 2.4rem;
+  transition: 0.2s;
 }
 
-nav.show .icon-close{
+nav.show i.icon-close{
   opacity: 1;
   visibility: visible;
   position: absolute;
-  right: 2.4rem;
-  top: 30%;
-  transition: top 0.2s
+  top: 2.4rem;
 }
 
 /*===  HOME ============================ */
 #home {
   overflow: hidden;
+  background-color: var(--body-color);
 }
 
 
@@ -269,6 +298,7 @@ nav.show .icon-close{
 /*===  Sobre ============================ */
 #about {
   overflow: hidden;
+  background-color: white;
 }
 
 
@@ -307,4 +337,10 @@ nav.show .icon-close{
   top: -8.3%;
   left: -33%;
   background:var(--base-color-second);
+}
+
+/*=== SERVICES ============================ */
+
+.cards{
+  
 }
