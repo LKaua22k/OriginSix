@@ -374,3 +374,8 @@ nav.show i.icon-close{
   color: var(--base-color);
   margin-bottom: 2.4rem;
 }
+/*=== TESTIMONIALS ============================ */
+
+#testemonials{
+  background-color: white;
+}
