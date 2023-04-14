@@ -379,3 +379,42 @@ nav.show i.icon-close{
 #testemonials{
   background-color: white;
 }
+
+#testimonials .container{
+  position: relative;
+}
+
+#testimonials header{
+  margin-right: 3rem;
+  margin-bottom: 0;
+}
+
+#testimonials blockquote{
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  padding: 3.2rem;
+}
+
+#testimonials blockquote p span{
+  color: var(--base-color);
+  font-family: serif;
+  font-size: 4.8rem;
+  position: absolute;
+}
+
+#testimonials blockquote p{
+  color: var(--title-color);
+  font-family: var(--font-DM);
+  margin-bottom: 2.4rem;
+}
+
+#testimonials cite{
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+#testimonials cite img{
+  width: 3.2rem;
+  height: 3,2rem;
+  clip-path: circle();
+}
