@@ -30,6 +30,7 @@ window.addEventListener('scroll',function(){
 })
 
 
+//Swiper testimonials
 const swiper = new Swiper('.swiper', {
     //Qunatidades de slides
     slidePerView: 1,
@@ -38,5 +39,22 @@ const swiper = new Swiper('.swiper', {
     },
     mousewheel: true,
     keyboard: true,
-    
+
   });
+
+//Scroll Reveal
+const revealScroll = ScrollReveal({
+    origin:'top',
+    distance: '30px',
+    duration: 700,
+    reset: true
+})
+
+revealScroll.reveal(
+    `#home .image, #home .text,
+    #about .image, #about .text,
+    #services .image, #services .card,
+    #testimonials header, #testimonials .testimonial,
+    #contact .text, #contact .links`, 
+    {inteval:100}
+)
