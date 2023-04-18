@@ -462,3 +462,14 @@ footer .logo span{
 footer p{
   color: var(--text-color-light);
 }
+
+footer ul{
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+footer ul a{
+  font-size: 2.4rem;
+  color: var(--text-color-light);
+}
