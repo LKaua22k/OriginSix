@@ -137,6 +137,10 @@ body {
   color: var(--base-color);
 }
 
+.logo-alt span{
+  color: var(--text-color-light)  ;
+}
+
 /*===  Layout ============================ */
 .container {
   margin-left: 2.4rem;
@@ -380,8 +384,14 @@ nav.show i.icon-close{
   background-color: white;
 }
 
+#testemonials .container{
+  margin-left: 0;
+  margin-right: 0;
+}
+
 #testimonials header{
-  margin-right: 3rem;
+  margin-left: 2.4rem;
+  margin-right: 2.4rem;
   margin-bottom: 0;
 }
 
@@ -405,13 +415,14 @@ nav.show i.icon-close{
   margin-bottom: 2.4rem;
   text-indent: 2.5rem;
   position: relative;
-}s
+}
 
 #testimonials cite{
   display: flex;
   align-items: center;
   gap: 0.8rem;
   font-size: normal;
+  text-align: center;
 }
 
 #testimonials cite img{
@@ -419,6 +430,21 @@ nav.show i.icon-close{
   height: 3.2rem;
   clip-path: circle();
   object-fit: cover;
+}
+
+/*=== SWIPER ============================ */
+.swiper-slide{
+  height: auto;
+  padding: 6.4rem 1rem;
+}
+
+.swiper-pagination-bullet{
+  width: 1rem;
+  height: 1rem;
+}
+
+.swiper-pagination-bullet-active{
+  background-color: var(--base-color);
 }
 
 /*=== Contact ============================ */
@@ -452,24 +478,33 @@ nav.show i.icon-close{
 /*=== Footer ============================ */
 footer{
   background: var(--base-color);
+}
+
+footer.section{
   padding: 6.4rem 0;
 }
 
-footer .logo span{
+footer .logo{
+  display: inline-block;
+  margin-bottom: 2.4rem;
+}
+
+footer .brand p{
   color: var(--text-color-light);
+  margin-bottom: 1.2rem;
 }
 
-footer p{
-  color: var(--text-color-light);
-}
-
-footer ul{
-  display: flex;
-  align-items: center;
-  gap: 3.2rem;
-}
-
-footer ul a{
+footer i{
   font-size: 2.4rem;
   color: var(--text-color-light);
+}
+
+footer .social a{
+  margin-right: 3.2rem;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+footer .social a:hover{
+  transform: translateY(-8px);
 }

@@ -16,6 +16,12 @@
       rel="stylesheet"
     />
 
+    <!-- Swiper -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
     <!-- Favicon -->
 
     <!-- Link Css -->
@@ -135,57 +141,59 @@
 
 
   <section class="section" id="testimonials">
-    <div class="container grid">
+    <div class="container">
       <header>
         <h2 class="title">Depoimentos de quem já passou por aqui</h2>
         </header>
 
-        <div class="testimonials">
-          <div class="testemonial">
-            <blockquote>
-              <p>
-              <span>&ldquo;</span>
-              Eu sou cliente do Beautysalon há 5 anos e não troco por nada! Certamente meu cabelo mudou muito depois que comecei a tratar somente com produtos naturais e veganos. São profissionais incríveis e qualificados.
-            </p>
-            <cite>
-              <img src="https://randomuser.me/api/portraits/women/10.jpg" alt="" srcset="">
-              Wanessa Souza
-            </cite>
+        <div class="testimonials swiper">
+
+          <div class="swiper-wrapper">
+
+            <div class="testemonial swiper-slide">
+              <blockquote>
+                <p>
+                <span>&ldquo;</span>
+                Eu sou cliente do Beautysalon há 5 anos e não troco por nada! Certamente meu cabelo mudou muito depois que comecei a tratar somente com produtos naturais e veganos. São profissionais incríveis e qualificados.
+              </p>
+              <cite>
+                <img src="https://randomuser.me/api/portraits/women/10.jpg" alt="" srcset="">
+                Wanessa Souza
+              </cite>
+            </blockquote>
+            </div>
+  
+            <div class="testemonial swiper-slide">
+              <blockquote>
+                <p>
+                <span>&ldquo;</span>
+                Minha mãe frequenta o salão há anos e me levou um dia para conhecer. Minha experiência foi incrível, eu continuo fazendo o a terapia capilar e isso salvou o meu cabelo. Adoro todos os profissionais do Beautysalon.
+              </p>
+              <cite>
+                <img src="https://randomuser.me/api/portraits/women/11.jpg" alt="" srcset="">
+                Luna Falcão
+              </cite>
+            </blockquote>
+            </div>
+  
+            <div class="testemonial swiper-slide"> 
+              <blockquote>
+                <p>
+                <span>&ldquo;</span>
+                Minha mãe frequenta o salão há anos e me levou um dia para conhecer. Minha experiência foi incrível, eu continuo fazendo o a terapia capilar e isso salvou o meu cabelo. Adoro todos os profissionais do Beautysalon.
+              </p>
+              <cite>
+                <img src="https://randomuser.me/api/portraits/women/11.jpg" alt="" srcset="">
+                Elizangela Araujo
+              </cite>
+            </blockquote>
+            </div>
+            
           </div>
 
-          <div class="testemonial">
-            </blockquote>
-            
-            <blockquote>
-              <p>
-              <span>&ldquo;</span>
-              Minha mãe frequenta o salão há anos e me levou um dia para conhecer. Minha experiência foi incrível, eu continuo fazendo o a terapia capilar e isso salvou o meu cabelo. Adoro todos os profissionais do Beautysalon.
-            </p>
-            <cite>
-              <img src="https://randomuser.me/api/portraits/women/11.jpg" alt="" srcset="">
-              Luna Falcão
-            </cite>
-          </div>
-          <div class="testemonial">
-
-            </blockquote>
-            
-            <blockquote>
-              <p>
-              <span>&ldquo;</span>
-              Minha mãe frequenta o salão há anos e me levou um dia para conhecer. Minha experiência foi incrível, eu continuo fazendo o a terapia capilar e isso salvou o meu cabelo. Adoro todos os profissionais do Beautysalon.
-            </p>
-            <cite>
-              <img src="https://randomuser.me/api/portraits/women/11.jpg" alt="" srcset="">
-              Elizangela Araujo
-            </cite>
-          </div>
-        </div>
-
-        </div>
-            </blockquote>
-            
-      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
     </div>
   </section>
 
@@ -215,31 +223,30 @@
     </div>
   </section>
 
-    <script src="./script.js"></script>
   </main>
 
-  <footer>
+  <footer class="section">
     <div class="container grid">
-      <a href="" class="logo">beauty<span>salon</span>.</a>
+      <div class="brand">
+        <a href="" class="logo logo-alt">beauty<span>salon</span>.</a>
 
-
-      <div class="text">
         <p>
           ©2021 Beautysalon.
         </p>
-        <br>
         <p>Todos os direitos reservados.</p>
       </div>
 
-      <div class="links">
-        <ul>
-          <a href="" class="icon-instagram"></a>
-          <a href="" class="icon-facebook"></a>
-          <a href="" class="icon-youtube"></a>
-        </ul>
-
+      <div class="social">
+          <a href=""><i class="icon-instagram"></i></a>
+          <a href=""><i class="icon-facebook"></i></a>
+          <a href=""><i class="icon-youtube"></i></a>
+      </div>
     </div>
   </footer>
 
+  <!-- Swiper JS-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <!-- Main JS -->
+  <script src="./script.js"></script>
   </body>
 </html>
