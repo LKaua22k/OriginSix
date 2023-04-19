@@ -55,6 +55,18 @@ revealScroll.reveal(
     #about .image, #about .text,
     #services .image, #services .card,
     #testimonials header, #testimonials .testimonial,
-    #contact .text, #contact .links`, 
+    #contact .text, #contact .links,
+    footer .brand, footer .social`, 
+    
     {inteval:100}
 )
+
+//Back to top
+const backToTop = document.querySelector('.back-to-top');
+window.addEventListener('scroll', function(){
+if(window.scrollY >= 560){
+backToTop.classList.add('show');
+} else{
+    backToTop.classList.remove('show');
+}
+} )
