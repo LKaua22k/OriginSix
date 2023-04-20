@@ -190,7 +190,7 @@ nav ul li a::after{
 
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -2.5rem;
 }
 
 nav ul li a:hover::after{
@@ -383,11 +383,11 @@ nav.show i.icon-close{
 }
 /*=== TESTIMONIALS ============================ */
 
-#testemonials{
-  background-color: white;
+#testimonials{
+  background: white;
 }
 
-#testemonials .container{
+#testimonials .container{
   margin-left: 0;
   margin-right: 0;
 }
@@ -540,6 +540,10 @@ footer .social a:hover{
 /*========= MEDIA QUERIES =========*/
 /* extra large devices: 1200 > */
 @media (min-width: 1200px) {
+  main {
+    margin-top:var(--header-height);
+  }
+
   .container{
     max-width: 1120px;
     margin-left: auto;
@@ -548,6 +552,14 @@ footer .social a:hover{
 
   .section{
     padding: 16rem 0;
+  }
+
+  .section header,
+  #testimonials header{
+    max-width: 52.3rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .button{
@@ -565,10 +577,16 @@ footer .social a:hover{
     gap: 3.2rem;
   }
 
-  nav .menu li a.title{
+  nav ul li a.title{
     font-size: 1.6rem;
     font-weight: 400;
     font-family: var(--font-DM);
+    -webkit-font-smoothing: antialiased;
+  }
+
+   nav  ul li a.active{
+    font-weight: bold;
+    -webkit-font-smoothing: auto;
   }
 
   nav .icon-menu{
@@ -592,10 +610,48 @@ footer .social a:hover{
     text-align: left;
   }
 
-  main {
-    margin-top:var(--header-height);
+  #about .container{
+    margin: 0 auto;
+    grid-auto-flow: column ;
+  }
+
+  .cards{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .card{
+    padding-left: 4.8rem;
+    padding-right: 4.8rem;
+  }
+
+  #testimonials .container{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #contact .container{
+    grid-auto-flow: column;
+    align-items: center;
+  }
+
+  #contact .text{
+    max-width: 35.4rem;
+  }
+
+  footer .container{
+    grid-auto-flow: column; 
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  footer .section{{
+    padding:6rem 0;
   }
 }
 /* large devices: 1023 > */
 /* large devices: 992 > */
+:root{
+  --title-font-size:3.2rem;
+  --subtitle-font-size:1.6rem;
+}
 /* medium devices: 767 > */
