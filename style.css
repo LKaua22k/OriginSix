@@ -37,6 +37,7 @@ img{
       font-size: 62.5%;
 
       /* Fonts */
+      --title-font-size:3rem;
       --subtitle-font-size:1.6rem;
   }
 
@@ -53,7 +54,7 @@ body {
 }
 
 .title{
-  font-size: 3rem;
+  font-size: var(--title-font-size) ;
   font-weight: 700;
   font-family: var(--font-Poppins);
   color: var(--title-color);
@@ -549,6 +550,10 @@ footer .social a:hover{
     padding: 16rem 0;
   }
 
+  .button{
+    height: 5rem;
+  }
+
   nav .menu{
     opacity: 1;
     visibility: visible;
@@ -573,7 +578,6 @@ footer .social a:hover{
   #home .container{
     grid-auto-flow: column;
     justify-content: space-between;
-    align-items: center;
     margin: 0 auto;
   }
 
