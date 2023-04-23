@@ -1,40 +1,28 @@
-<p align="center">
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>
-</p>
+<h1 align="center"> DOE </h1>
 
+<br>
 
 <p align="center">
-  <img alt="OriginSix" src=".github/preview.jpg" width="100%">
+  <img alt="Formulario de doação" src=".github/preview.jpg" width="100%">
 </p>
 
 ## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- HTML
-- CSS
-- JavaScript
+- HTML e CSS
 - Git e Github
 - Figma
 
-Bibliotecas
-
-- [Google Fonts](https://fonts.google.com/)
-- [SwipeJS](https://github.com/nolimits4web/Swiper)
-- [ScrollReveal](https://scrollrevealjs.org)
-
-Utilitários
-
-- [randomuser.me](https://randomuser.me/photos)
-- [IconMoon](https://icomoon.io/app/#/select)
-
 ## 💻 Projeto
 
-OriginSix é uma página institucional no formato One Page, responsiva, para usar em diversos tipos de micro, pequena e média empresas. Contém as seguintes seções: Header, Navigation, Home, Sobre, Serviços, Depoimentos, Contato e Footer
+O DOE é um formulario de doação.
 
-- [Acesse o projeto finalizado, online](https://lkaua22k.github.io/OriginSix/)
+- [Acesse o projeto finalizado, online](https://lkaua22k.github.io/DOE/)
+
+## 📝 Licença
+
+Esse projeto está sob a licença MIT.
 
 ---
 
