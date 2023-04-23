@@ -21,13 +21,13 @@ for(const link of links){
 const header = document.querySelector('#header');
 const navHeight = header.offsetHeight;
 
-window.addEventListener('scroll',function(){
+function changeHeaderWhenScroll(){
     if(window.scrollY >= navHeight){
         header.classList.add('scroll');
     } else{
         header.classList.remove('scroll');
     }
-})
+}
 
 
 //Swiper testimonials
@@ -68,11 +68,20 @@ revealScroll.reveal(
 )
 
 //Back to top
-const backToTop = document.querySelector('.back-to-top');
-window.addEventListener('scroll', function(){
+const backToTopButton = document.querySelector('.back-to-top');
+
+function backToTop() {
 if(window.scrollY >= 560){
-backToTop.classList.add('show');
+backToTopButton.classList.add('show');
 } else{
-    backToTop.classList.remove('show');
+    backToTopButton.classList.remove('show');
 }
-} )
+} 
+
+/* When Scroll */
+window.addEventListener('scroll', function(){
+    changeHeaderWhenScroll()
+    backToTop()
+})
+
+

@@ -508,6 +508,13 @@ footer .social a{
   display: inline-block;
 }
 
+/* .socil com grid */
+
+/* footer .social{
+  grid-auto-flow: column;
+  width: fit-content;
+} */
+
 footer .social a:hover{
   transform: translateY(-8px);
 }
@@ -642,6 +649,10 @@ footer .social a:hover{
     grid-auto-flow: column; 
     align-items: center;
     justify-content: space-between;
+  }
+
+  footer .logo{
+    font-size: 3.2rem;
   }
 
   footer .section{
