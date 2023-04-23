@@ -3,7 +3,7 @@
 <br>
 
 <p align="center">
-  <img alt="Formulario de doação" src=".github/preview.jpg" width="100%">
+  <img alt="Formulario de doação" src=".github/preview.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
