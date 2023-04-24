@@ -17,7 +17,6 @@ img{
   height: auto;
 }
 
-
 :root {
     --header-height: 7.2rem;
   
@@ -178,7 +177,8 @@ nav ul li a{
   position: relative;
 }
 
-nav ul li a:hover{
+nav ul li a:hover,
+nav ul li a.active{
   color:var(--base-color);
 }
 
@@ -193,7 +193,8 @@ nav ul li a::after{
   bottom: -2.5rem;
 }
 
-nav ul li a:hover::after{
+nav ul li a:hover::after,
+nav ul li a.active::after{
   width: 100%;
   transition: width 0.3s;
 }

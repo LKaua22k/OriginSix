@@ -1,10 +1,16 @@
 // Abre e fecha o menu quando o clica no icone
 const nav = document.querySelector('#header nav');
 const toggle = document.querySelectorAll('nav .toggle');
+let Over = true
 
 for(const element of toggle){
     element.addEventListener('click',function(){
-        nav.classList.toggle('show');
+
+        document.body.style.overflow = Over ? "hidden" : "initial"
+
+        nav.classList.toggle('show', Over)
+
+        Over = !Over
     })
 }
 
@@ -13,7 +19,11 @@ const links = document.querySelectorAll('nav ul li a')
 
 for(const link of links){
     link.addEventListener('click',function(){
+
+        document.body.style.overflow = Over =  "initial"
+
         nav.classList.remove('show');
+
     })
 }
 
@@ -76,10 +86,41 @@ backToTopButton.classList.add('show');
 } else{
     backToTopButton.classList.remove('show');
 }
-} 
+}
+
+// Ativar o menu quando esiver visivel na pagina 
+const sections = document.querySelectorAll('main section[id]')
+
+function activateMenuAtCurrentSection(){
+
+    const check = window.pageYOffset + (window.innerHeight / 8) * 4
+
+    for(const section of sections){
+        const sectionTop = section.offsetTop
+        const sectionHeight = section.offsetHeight
+        const sectionId = section.getAttribute('id')
+
+        const checkStart = check >= sectionTop
+        const checkEnd = check <= sectionTop + sectionHeight
+
+        if(checkStart && checkEnd) {
+        document
+        .querySelector('nav ul li a[href*=' + sectionId +']') 
+        .classList.add('active')
+    } else{
+        document
+        .querySelector('nav ul li a[href*=' + sectionId +']') 
+        .classList.remove('active')
+    }
+    }
+
+}
+
+
 
 /* When Scroll */
 window.addEventListener('scroll', function(){
+    activateMenuAtCurrentSection()
     changeHeaderWhenScroll()
     backToTop()
 })
