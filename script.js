@@ -1,7 +1,7 @@
 // Abre e fecha o menu quando o clica no icone
 const nav = document.querySelector('#header nav');
 const toggle = document.querySelectorAll('nav .toggle');
-let Over = true
+let Over = false
 
 for(const element of toggle){
     element.addEventListener('click',function(){
@@ -115,6 +115,13 @@ function activateMenuAtCurrentSection(){
     }
 
 }
+
+// Fechar menu 
+window.addEventListener('resize', function(event){
+    if(window.innerWidth > 1199){
+        nav.classList.remove('show')
+    }
+})
 
 
 
